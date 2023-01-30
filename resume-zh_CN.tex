@@ -1,0 +1,90 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !Mode:: "TeX:UTF-8"
+\documentclass{resume}
+%\documentclass[8pt]{article}
+%\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+\usepackage{linespacing_fix} % disable extra space before next section
+\usepackage{cite}
+\usepackage[colorlinks,linkcolor=blue,anchorcolor=blue,citecolor=green,urlcolor=blue]{hyperref}
+
+
+%for header image
+\usepackage{graphicx}
+
+%for floating figures
+\usepackage{wrapfig}
+\usepackage{float}
+%\floatstyle{boxed}
+%\restylefloat{figure}
+
+
+\newcommand{\vcenteredinclude}[1]{\begingroup
+\setbox0=\hbox{\hspace*{-2.9cm}\includegraphics[width=1.2cm]{#1}}%
+\parbox{\wd0}{\box0}\endgroup}
+
+
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+\name{ 佩\hspace{0.1cm}奇 }
+
+% {E-mail}{mobilephone}{homepage}
+% be careful of _ in emaill address
+{\centerline{\contactInfo{\href{mailto:peiqi@foxmail.com}{peiqi@foxmail.com}}{(+86)180-8888-8888}{7岁}\vcenteredinclude{images/photo.jpg}}}
+%\centerline{\includegraphics[width=0.2cm]{mazhen.jpg}}
+
+% {E-mail}{mobilephone}
+% keep the last empty braces!
+%\contactInfo{xxx@yuanbin.me}{(+86) 131-221-87xxx}{}
+
+
+
+\section{\faGraduationCap 教育背景}
+
+\datedsubsection{\textbf{xx大学}, xx学院}{20xx年9月 -- 20xx年6月}
+\textit{硕士}\ \ xx专业
+
+\datedsubsection{\textbf{xx大学}, xx学院}{20xx年9月 -- 20xx年7月}
+\textit{学士}\ \ xx专业
+
+
+\section{\faCogs\ 技能}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.5ex]
+  \item 英语等级：CET-6
+  \item 熟悉Python、了解C、C++、Java、JavaScript
+  \item 对计算机视觉(分类、检测和分割)有一定认识
+  \item 对自然语言处理有一定了解
+  \item 对常见的数据结构与算法、机器学习算法有一定了解
+  \item 对网络爬虫有一定的了解
+\end{itemize}
+
+
+\section{\faUsers\ 科研 / 项目经历}
+
+\datedsubsection{\textbf{利用Yolov3实现手机摄像头目标识别}}{20xx年x月 -- 20xx年x月}
+\begin{itemize}
+\item 页面上调用摄像头，并利用Ajax将摄像头拍摄的图片动态地发给Tornado后端
+\item Tornado后端接收图片后，调用训练好的YoloV3模型来检测图片中的物体并显示
+\end{itemize}
+
+\datedsubsection{\textbf{实验室博客平台搭建}}{20xx年x月 -- 20xx年x月}
+\begin{itemize}
+\item Django作为后端，mysql作为数据库
+\item 博文支持markdown
+\item 利用爬虫技术，在博客上一键重启实验室wifi路由器、一键开启实验室门锁
+\end{itemize}
+
+
+\section{\faPaperPlane\ 自我评价}
+\hspace*{0.8cm}自我评价。。。
+
+
+
+%% Reference
+%\newpage
+%\bibliographystyle{IEEETran}
+%\bibliography{mycite}
+\end{document}
