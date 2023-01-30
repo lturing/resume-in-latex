@@ -17,7 +17,7 @@ sudo apt install texlive-xetex
 options -> configure TeXstudio -> build -> default builder -> XeLaTex
 ```
 
-编译简历
+编译简历[pdf](resume-zh_CN.pdf)
 ```
 git clone https://github.com/lturing/resume-in-latex.git
 
