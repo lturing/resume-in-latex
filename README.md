@@ -1,6 +1,6 @@
 # resume-in-latex
-个人简历
-环境：ubuntu20
+个人简历   
+**环境：ubuntu20**
 
 安装texlive
 ```
