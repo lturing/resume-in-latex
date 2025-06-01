@@ -5,6 +5,7 @@
 安装texlive
 ```
 sudo apt install texlive-xetex
+sudo apt install texlive-lang-chinese
 ```
 
 安装texstudio
